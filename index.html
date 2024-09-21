@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="AboutMe.html">PRISCILLA</a></div>
+      <div class="buttons">
+        <input type=button onClick="parent.location='#.html'"value='Login'>
+        <input type=button onClick="parent.location='#.html'"value='Register'>
+         <input type=button onClick="parent.location='#.html'"value='Contact Us'>
+         <input type=button onClick="parent.location='#.html'"value='About'>
+        <input type=button onClick="parent.location='#.html'"value='Pricing'>
+      </div>
+
+    </nav>
+<style>
+img {
+  display: flex;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  position: right;
+}
+</style>
+</head>
+<body>
+
+<img src="heart.png" alt="Paris" style="width:40%; ">
+
+</body>
+</html>
+
+    <div class="text-content">
+      <h2>HUMANS!!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    </div>
+    <div class="play-button">
+      <span class="play">Play Video</span>
+      <i class="fas fa-play" onclick="click()"></i>
+    </div>
+  </header>
+  <style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  transition: all 0.3s ease;
+}
+h2{
+  font-color:#fff;
+}
+body{
+  height: 100vh;;
+  width: 100%;
+  display: flex;
+  background-color:#002147
+}
+::selection{
+  color: #f2f2f2;
+  background: #f86d8d;
+}
+body::before,
+body::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+body::before{
+  clip-path: circle(25% at left 30%);
+  opacity: 0.7;
+  background-image:url(heart1.png);
+  background-color: #000;
+}
+body::after{
+  opacity: 0.7;
+  clip-path: circle(50% at right 30%);
+  background-color: rgb(255, 255, 200);
+}
+header{
+  height: 85vh;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px #fff;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  backdrop-filter: blur(1px);
+  z-index: 12;
+  border-radius: 25px;
+  margin: auto;
+  position: relative;
+}
+header .navbar{
+  margin: auto;
+  width: 100%;
+  padding: 35px 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar .logo a{
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 500;
+}
+.navbar .menu li{
+  list-style: none;
+  margin: 0 6px;
+}
+.navbar .menu a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.navbar .menu a:hover{
+  color: #f2f2f2;
+}
+.navbar .buttons input{
+  outline: none;
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 6px 15px;
+  border: none;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  transition: all 0.3s ease;
+   background-color: transparent;
+    background-repeat: no-repeat;;;
+}
+.navbar .buttons input:hover{
+  transform: scale(0.97);
+}
+ header .text-content{
+   width: 40%;
+   margin: 100px 0 0 50px ;
+ }
+.text-content h2{
+  font-weight: 600;
+  margin: auto;
+  font-family: sans-serif;
+  font-size: 100px;
+  color: #fff;
+}
+.text-content p{
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fff;
+}
+header .play-button{
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
+}
+.play-button .play{
+  font-size: 18px;
+  font-weight: 500;
+}
+ .play-button .play::before{
+   content: '';
+   position: absolute;
+   height: 3px;
+   width: 50px;
+   top: 50%;
+   transform: translateY(-50%);
+   left: -58px;
+   background: #000;
+ }
+.play-button i{
+  height: 40px;
+  width: 40px;
+  border: 2px solid #000;
+  line-height: 38px;
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media (max-width:850px) {
+  header .navbar{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 5px;
+  }
+  .navbar .menu {
+    margin: 10px 0 20px 0;
+  }
+  header .text-content{
+    margin: 30px 0 0 20px ;
+    width: 70%;
+  }
+  header .text-content h2{
+    font-size: 20px;
+  }
+}
+@media (max-width:410px) {
+  header{
+    height: 100vh;
+    width: 100%;
+    border-radius: 0px;
+  }
+  header .navbar{
+    padding: 15px 10px;
+}
+}
+
+    <style/>
+</body>
+</html>
